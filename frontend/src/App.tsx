@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import { isAuthenticated } from './api/client';
 import Layout from './components/Layout';
 import Login from './pages/Login';
@@ -25,6 +26,7 @@ export default function App() {
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <VercelAnalytics />
     </BrowserRouter>
   );
 }
