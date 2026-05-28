@@ -1,0 +1,16 @@
+Booking_Ref,Traveler_Name,Travel_Date,Origin,Destination,Cabin_Class,Status,Category,Cost_Center,Airline
+BK-1001,Rahul Sharma,2025-01-20,DEL,BOM,Economy,Flown,Air Travel,CC1001,AI
+BK-1001,Rahul Sharma,2025-01-22,BOM,DEL,Economy,Flown,Air Travel,CC1001,AI
+BK-1002,Priya Patel,2025-01-25,BLR,DEL,Business,Flown,Air Travel,CC2001,6E
+BK-1003,Amit Singh,2025-02-01,DEL,LHR,Business,Flown,Air Travel,CC1001,BA
+BK-1003,Amit Singh,2025-02-05,LHR,DEL,First,Flown,Air Travel,CC1001,BA
+BK-1004,Sneha Gupta,2025-02-10,BOM,SIN,Economy,Canceled,Air Travel,CC3001,SQ
+BK-1005,Vikram Reddy,2025-02-12,HYD,DEL,Economy,Flown,Air Travel,CC2001,AI
+BK-1005,Vikram Reddy,2025-02-12,HYD,DEL,Economy,Flown,Air Travel,CC2001,AI
+BK-1006,Anita Desai,2025-02-15,MAA,NYC,Premium Economy,Flown,Air Travel,CC1002,UA
+BK-1007,Raj Kumar,2025-02-18,CCU,,Economy,Flown,Air Travel,CC2002,6E
+BK-1008,Deepika Nair,2025-02-20,DEL,DXB,Economy,Voided,Air Travel,CC1001,EK
+BK-1008,Deepika Nair,2025-02-21,DEL,DXB,Economy,Flown,Air Travel,CC1001,EK
+BK-1009,Suresh Iyer,2025-02-25,BOM,FRA,Business,Flown,Air Travel,CC3001,LH
+BK-1010,Kavita Joshi,2025-02-28,DEL,BLR,Economy,Flown,Misc Travel,CC1001,AI
+BK-1011,Arjun Mehta,2025-03-01,BLR,NRT,Business,Flown,Air Travel,CC2001,NH
