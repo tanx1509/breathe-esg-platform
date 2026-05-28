@@ -262,7 +262,7 @@ export default function CommandCenter() {
                 <YAxis type="category" dataKey="name" tick={{ fontSize: 12, fill: '#374151', fontFamily: 'DM Sans', fontWeight: 600 }}
                        axisLine={false} tickLine={false} width={60} />
                 <Tooltip contentStyle={{ borderRadius: '12px', border: '1px solid #E2E8E4', fontSize: '12px', fontFamily: 'DM Sans' }}
-                         formatter={(value: number) => [`${value.toLocaleString()} kgCO₂e`, 'Emissions']} />
+                         formatter={(value: any) => [`${Number(value).toLocaleString()} kgCO₂e`, 'Emissions']} />
                 <Bar dataKey="value" radius={[0, 8, 8, 0]} animationDuration={1000}>
                   {emissionsData.map((entry, i) => <Cell key={i} fill={entry.fill} />)}
                 </Bar>

@@ -121,12 +121,12 @@ export default function Analytics() {
             <ResponsiveContainer width="100%" height={220}>
               <PieChart>
                 <Pie data={scopeEmissions} cx="50%" cy="50%" innerRadius={50} outerRadius={85} paddingAngle={4} dataKey="value"
-                     label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                     label={({ name, percent }) => `${name} (${((percent || 0) * 100).toFixed(0)}%)`}
                      animationDuration={1000}>
                   {scopeEmissions.map((e, i) => <Cell key={i} fill={e.fill} stroke="white" strokeWidth={2} />)}
                 </Pie>
                 <Tooltip contentStyle={{ borderRadius: '12px', border: '1px solid #E2E8E4', fontSize: '12px', fontFamily: 'DM Sans' }}
-                         formatter={(v: number) => [`${v.toLocaleString()} kgCO₂e`, 'Emissions']} />
+                         formatter={(v: any) => [`${Number(v).toLocaleString()} kgCO₂e`, 'Emissions']} />
               </PieChart>
             </ResponsiveContainer>
           )}
