@@ -32,7 +32,7 @@
 
 <br/>
 
-[**Live Platform**](#) · [**Live Demo**](#demo-credentials) · [**Architecture**](#architecture) · [**Setup**](#quick-start)
+[**Live Platform**](https://breathe-esg-platform-omega.vercel.app) · [**Live Demo**](#demo-credentials) · [**Architecture**](#architecture) · [**Setup**](#quick-start)
 
 <br/>
 
@@ -44,7 +44,7 @@
 
 ### Production Deployment (Vercel)
 
-[Open Breathe ESG Live](https://breathe-esg-platform-hazel.vercel.app/)
+[Open Breathe ESG Live](https://breathe-esg-platform-omega.vercel.app/)
 
 ---
 
@@ -129,6 +129,26 @@ stateDiagram-v2
 This strict lifecycle guarantees:
 * **Traceability**: Every canonical record links directly back to its raw upload payload.
 * **Accuracy**: High-severity anomalies (`BLOCKING`) physically cannot enter the canonical ledger until human intervention occurs.
+
+---
+
+## Product Walkthrough
+
+### 1. Ingestion Command Center
+The nerve center of the pipeline. Upload messy data and watch the deterministic engine process, flag, and route records.
+![Ingestion Command Center](./screenshots/01-command-center.png)
+
+---
+
+### 2. ESG Analytics
+Operational intelligence and data quality observability based on canonical ledger records.
+![ESG Analytics Dashboard](./screenshots/02-analytics.png)
+
+---
+
+### 3. Review Queue & Provenance Drawer
+The analyst governance layer. Full auditability of JSON payloads, rule flags, and deterministic scoring.
+![Review Queue and Provenance Drawer](./screenshots/03-review-queue.png)
 
 ---
 
